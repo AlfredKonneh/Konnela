@@ -1,0 +1,187 @@
+/* Tablet */
+
+@media screen and (min-width: 48em) {
+  /* Typography */
+  body{
+    line-height: 1.6;
+  }
+
+  h1{
+    font-size: 5rem;
+  }
+  h2{
+    font-size: 3.6rem;
+  }
+  h3{
+    font-size: 3rem;
+  }
+  h4{
+    font-size: 2.2rem;
+  }
+
+
+  /* Form */
+  .contact-form{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .textarea-container, .email-container{
+    grid-column: 1/-1;
+    }
+  
+    .contact-form .btn{
+      grid-column: span 2;
+    }
+  
+    /* call to action */
+    .callout{
+      grid-template-columns: 1fr auto;
+      text-align: left;
+    }
+  
+    .callout__btn{
+      justify-self: start;
+      align-self: center;
+    }
+  
+    /* navitation */
+    .main--header{
+      padding-bottom: 1rem;
+    }
+    .toggler-container{
+      display: none;
+    }
+  
+    .list.nav__list{
+      flex-direction: row;
+      align-items: center;
+      margin: 0;
+      max-height: 100%;
+      opacity: 1;
+      padding: 0;
+      width: auto;
+    }
+
+    /* block */
+    .block__header{
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  
+    /* Hero */
+    .hero{
+      padding-top: 14rem;
+    }
+    .hero__content{
+      max-width: 60%;
+      margin: 0 auto;
+    }
+
+    /* Team */
+    .team{
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 2rem;
+    }
+
+    .leader{
+      max-width: 200px;
+    }
+
+    /* block history */
+    .block--history h2{
+      font-size: 3.3rem;
+      line-height: 1.1;
+    }
+
+    .block--team{
+      justify-items: center;
+    }
+
+    /* block cocoa and coffee */
+    .block--cocoa-coffee .grid--1x2{
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .block--cocoa-coffee .card{
+      text-align: left;
+    }
+
+    /* block substainbility */
+    .block--substainbility .card{
+      text-align: left;
+    }
+
+    /* block contact */
+    .contact__content{
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* footer */
+    .footer .grid{
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      justify-items: center;
+      text-align: initial;
+      gap: 0;
+    }
+
+    .footer__brand{
+      order: -1;
+    }
+
+    .footer__section{
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .footer .collapsible__toggler{
+      display: none;
+    }
+
+    .footer .collapsible__content{
+      max-height: 100%;
+      opacity: 1;
+    }
+}
+
+/* Destop  */
+
+@media screen and (min-width: 64em){
+  /* Grid */
+  
+  .grid--1x2{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid--1x3{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* team */
+
+  .leader{
+    max-width: 150px;
+  }
+
+  .block--team{
+    grid-template-columns: 1fr auto;
+  }
+  .block--team .block__header{
+    align-self: center;
+    text-align: left;
+  }
+
+  /* block konnela */
+  .block--konnela{
+    column-gap: 5rem;
+  }
+
+  .konnela__content{
+    order: 2;
+    align-self: center;
+    text-align: left;
+  }
+
+  .konnela__leader{
+    max-width: 600px;
+  }
+}
+
